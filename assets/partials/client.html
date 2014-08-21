@@ -1,0 +1,9 @@
+<div ng-controller="clientController">
+	<h2>Welcome {{ user }}</h2>
+	<div id="messages" style="border:solid 1px #ccc; padding:10px; width:50%; height:400px;">
+		<ul>
+			<li ng-repeat="message in messages"><strong>{{ message.name }}</strong><br/>{{ message.message }}</li>
+		</ul>
+	</div>
+	<input type="text" id="message" ng-model="message" ng-enter="send()"><button ng-click="send()">Send</button>
+</div>

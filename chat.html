@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="chatclient">
+
+<head>
+	<title>Chat Client</title>
+	<script type="text/javascript" src="assets/components/angular/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+	<script type="text/javascript" src="assets/js/chat.js"></script>
+	<style>
+		#messages { overflow:scroll; }
+		#messages ul { list-style-type:none; margin:0px; padding:0px;}
+		#messages ul li { margin-bottom:15px; }
+		
+	</style>
+</head>
+
+<body>
+	 <div ng-view></div>
+</body>
+
+</html>
